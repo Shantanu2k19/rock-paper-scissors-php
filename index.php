@@ -7,7 +7,7 @@
                 font-family: Arial, sans-serif;
             }
         </style>
-        <title>RPS Shantanu Singh</title>
+        <title>Shantanu Singh</title>
     </head>
     <body>
         <h1>Welcome to Rock Paper Scissors</h1>
