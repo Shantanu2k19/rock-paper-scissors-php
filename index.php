@@ -11,7 +11,7 @@
     </head>
     <body>
         <h1>Welcome to Rock Paper Scissors</h1>
-        <a href="login.php">Please login</a>
+        <a href="login.php">Please Log In</a>
         <br><br>
         <a href="game.php">game.php</a>
     </body>
