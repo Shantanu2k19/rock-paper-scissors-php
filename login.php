@@ -34,18 +34,13 @@
 
 
 <!DOCTYPE html>
-<html>
+<html class="login-page">
     <head>
-        <title>Shantanu Singh's Login Page</title>
-        <style>
-            body{
-                padding : 40px;
-                font-family: Arial, sans-serif;
-            }
-        </style>
+        <title>Login Page</title>
+        <link rel="stylesheet" type="text/css" href="styling.css">
     </head>
-<body>
 
+<body>
 <h1>Please Log In</h1>
     <?php
     if ( $failure !== false ) {
@@ -56,11 +51,26 @@
         <label for="nam">User Name</label>
         <input type="text" name="who" id="nam"><br/>
 
-        <label for="id_1723">Password</label>
+        <label for="id_1723">Password*</label>
         <input type="text" name="pass" id="id_1723"><br/>
+        <br>
 
-        <input type="submit" value="Log In">
-        <input type="submit" name="cancel" value="Cancel">
-        <p style="font-size: small; color: gray;"><br>hint : php123<p>
+        <div id="login-button-container">
+            <input type="submit" value="Log In" class="button1 button2">
+            <pre>   </pre>
+            <input type="submit" name="cancel" value="Cancel" class="button1 button2">
+        </div>
+        <pre><p style="font-size: xx-small; color: gray;">
+            
+        
+
+
+
+
+
+
+        
+        
+user    : any<br>*pass hint : php123</pre><p>
     </form>
 </body>
