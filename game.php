@@ -2,7 +2,8 @@
 
     // Demand a GET parameter
     if ( ! isset($_GET['name']) || strlen($_GET['name']) < 1  ) {
-        die('Name parameter missing');
+        header('Location: error.html');
+        return;
     }
 
     // If the user requested logout go back to index.php
@@ -61,9 +62,11 @@
 
 
 <!DOCTYPE html>
-<html>
+<html  class="game-page-body">
     <head>
+        <link rel="stylesheet" type="text/css" href="styling.css">
         <title>Shantanu's Rock,Paper,Scissors Game</title>
+     <!--   <link rel="stylesheet" type="text/css" href="styling.css"> -->
         <style>
             body{
                 font-family: Arial, sans-serif, monospace;
@@ -90,8 +93,11 @@
                 <option value="2">Scissors</option>
                 <option value="3">Test</option>
             </select>
-            <input type="submit" value="Play">
-            <input type="submit" name="logout" value="Logout">
+            <div id="game-button-container">
+                <input type="submit" value="Play" class="button1 button2">
+                <pre>   </pre>
+                <input type="submit" name="logout" value="Logout" class="button1 button2">
+            </div>
         </form>
 
         <pre>
