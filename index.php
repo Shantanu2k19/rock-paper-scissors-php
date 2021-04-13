@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html class="index-page">
     <head>
-        <style>
-            body{
-                padding : 40px;
-                font-family: Arial, sans-serif;
-            }
-        </style>
-        <title>Shantanu Singh</title>
+        <link rel="stylesheet" type="text/css" href="styling.css">
+        <title >Rock paper scissors</title>
     </head>
-    <body>
+    <body >
         <h1>Welcome to Rock Paper Scissors</h1>
-        <a href="login.php">Please Log In</a>
+        <a class="button button2" href="login.php">Login</a>
         <br><br>
-        <a href="game.php">game.php</a>
+        <a class="button button2" href="game.php">Play game</a>
     </body>
 </html>
